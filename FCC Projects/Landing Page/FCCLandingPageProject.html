@@ -2,7 +2,7 @@
 <html>
 <head>
         <title>My Landing Page Project for Freecodecamp</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header id="header">
@@ -58,12 +58,30 @@
                       <span id="About" class="Specifications">Specifications</span>
         </main>
 
-                     <main id="Contact">
+        <main id="Contact">
                 <h1 id="About" class="section-headers">Contact</h1>
                 <div class="section-container">
                   <div id="about-grid-container">
                     <div id="about-text">
-                        <p>Insert Contact data here</p><br>
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <p>
+                                <label>Name</label>
+                                <input type="text" id="name">
+                            </p>
+                            <p>
+                                <label>Email</label>
+                                <input type="email" id="email" placeholder="Enter your email here" target="_blank" name="email" required>
+                            </p>
+                            <p>
+                                <label>Message</label>
+                                <textarea name="message" rows="5"></textarea>
+                            </p>
+                            <p>
+                                <label>Submit</label>
+                                <input id="submit" type="submit">
+                            </p>
+                        </form>
+                        
                       <span id="About" class="Contact">Contact</span>
         </main>
     

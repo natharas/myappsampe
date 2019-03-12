@@ -23,9 +23,11 @@ body{
     background-color: coral;
     color: #fff;
     
+    
 }
 
 #nav-bar{
+    
     background-color: #333;
     color: #fff;
     margin-top: 90px;
@@ -33,15 +35,16 @@ body{
 }
 
 #nav-bar ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 #nav-bar li{
     display: inline-block;
     margin-left: 70px;
-    padding-top: 25px;
     position: relative;
 }
 

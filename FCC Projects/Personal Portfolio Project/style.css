@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: #BDD3DE;
+  font-family: 'Heebo';
+  line-height: 1.5;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+}

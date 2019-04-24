@@ -36,3 +36,14 @@ li a {
 li a:hover {
   background-color: #ff8400;
 }
+
+.btn {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: double;
+  color: rgb(64, 80, 230);
+  background: hsl(230,70%,90%);
+  margin-left: 4%;
+  float: center;
+}

@@ -11,7 +11,7 @@ body {
 
 .intro {
   top: 0;
-  background: #e0ebe8;
+  background: #b5dfc5;
   min-height: 55vh;
   padding-top: 45vh;
   /*   line-height: 100vh; */
@@ -20,15 +20,23 @@ body {
 border:solid; */
 }
 
+.intro h1 {
+  color: #115478;
+}
+
 .intro p {
-  color: black;
+  color:#115478;
+}
+
+.Projects h2 {
+  color: #115478;
 }
 
 nav ul {
   text-align: right;
   position: fixed;
   width: 100%;
-  background-color: #e0ebe8;
+  background-color: #b5dfc5;
 }
 
 nav ul li {
@@ -39,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #008080;
+  color: #115478;
   text-decoration: none;
 }
 
@@ -54,7 +62,7 @@ nav ul li a:hover {
 
 .work .work-header {
   margin-top: 50px;
-  color: #008080;
+  color: #115478;
   font-weight: normal;
 }
 
@@ -86,8 +94,8 @@ nav ul li a:hover {
   width: 200px;
   height: 30px;
   margin: 20px auto 90px;
-   background: #e0ebe8;
-  color: #008080;
+   background: #b5dfc5;
+  color: #115478;
   font-weight: bold;
   font-size: 1em;
   border: 2px solid #90C695;
@@ -98,7 +106,7 @@ nav ul li a:hover {
 
 
 .show-all:hover {
-  background: #E4F1FE;
+  background: #b5dfc5;
   color: green;
 }
 
@@ -117,7 +125,7 @@ nav ul li a:hover {
 .contact {
   /*   height:800px; */
   /*   min-height:800px; */
-  background: #C8F7C5;
+  background: #b5dfc5;
   padding-bottom: 160px;
 }
 
@@ -135,25 +143,25 @@ nav ul li a:hover {
   width: 100px;
   height: 100px;
   line-height: 100px;
-  background: #e0ebe8;
-  color: #008080;
+  background: #b5dfc5;
+  color: #115478;
   text-decoration: none;
 }
 
 .contact-details:hover {
-  background: #E4F1FE;
+  background: #b5dfc5;
   color: green;
 }
 
 footer {
   padding: 20px;
-  background: #22313F;
-  color: white;
+  background: #b5dfc5;
+  color: #115478;
   line-height: 40px;
 }
 
 footer a {
-  color: white;
+  color: #115478;
 }
 
 @media only screen and (max-width: 367px) {

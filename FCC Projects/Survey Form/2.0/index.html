@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <h1 id="title">FCC Survey Form</h1>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    </head>
+
+    <div id="form-outer">
+        <p id="description">This survey is aimed at people who are using the FreeCodeCamp syllabus and to provide feedback to further enhance the curriculum.</p>
+            <form id="survey-form" method="GET" action="">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="name-label" for="name">Name (Required):</label>
+                    </div>
+                        <div class="rightTab">
+                        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+                        </div>
+                </div>
+
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="email-label" for="email">Email (Required):</label>
+                    </div>
+                        <div class="rightTab">
+                        <input autofocus type="email" name="email" id="email" class="input-field" placeholder="test@testemail.com" required>
+                        </div>
+                </div>
+
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label" for="age">Age:</label>
+                    </div>
+                        <div class="rightTab">
+                        <input autofocus type="number" name="age" id="number" min="18" max="100" class="input-field" placeholder="18 and older">
+                        </div>
+                    </div>
+
+<!--Dropdown menu-->                
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="most-like">What do you like the most about FreeCodeCamp?</label>
+                    </div>
+                        <div class="rightTab">
+                            <select id="dropdown" name="most-like" id="most-like" class="dropdown">
+                                <option value="challenges">Challenges</option>
+                                <option value="projects">Projects</option>
+                                <option value="community">Community</option>
+                                <option value="podcasts">Podcasts</option>
+                                <option value="youtube">YouTube Channel</option>
+                            </select>   
+                        </div>
+                </div>
+
+<!--Radio Buttons-->                
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="user-rating">How likely would you be to recommend FreeCodeCamp to a friend?</label>
+                    </div>
+                        <div class="rightTab">
+                            <ul style="list-style: none;">
+                                <li class="radio"><label><input name="radio-button" value="yes" type="radio" class="user-rating">Yes, I would.</label></li>
+                                <li class="radio"><label><input name="radio-button" value="maybe" type="radio" class="user-rating">Maybe.</label></li>
+                                <li class="radio"><label><input name="radio-button" value="no" type="radio" class="user-rating">No, I wouldn't.</label></li>
+                            </ul>
+                        </div>
+                </div>
+
+<!--Tickboxes-->
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="topics">What would you like FreeCodeCamp to implement?</label>
+                    </div>
+                        <div class="rightTab">
+                            <ul id="topics" style="list-style: none;">
+                                <li class="checkbox"><label><input name="topic" value="mentoring" type="checkbox" class="newTopic">Mentoring program</li>
+                                <li class="checkbox"><label><input name="topic" value="website" type="checkbox" class="newTopic">Website layout</li>
+                                <li class="checkbox"><label><input name="topic" value="website" type="checkbox" class="newTopic">Website layout</li>
+                            </ul>
+                        </div>
+                </div>
+
+<!--Feedback textarea-->
+                <div class="rowTab">
+                        <div class="labels">
+                            <label for="comments">Please provide your feedback about FreeCodeCamp</label>
+                        </div>
+                        <div class="rightTab">
+                            <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your feedback here."></textarea>
+                        </div>
+
+                <button id="submit" type="submit">Submit</button>
+                 
+                </fieldset>
+
+            </form>
+    </div>
+
+<footer>
+    <p>FreeCodeCamp Project: Build a Survey Form</p>
+    <p>Created by Natharas</p>
+</footer>
+
+</html>

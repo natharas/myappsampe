@@ -8,7 +8,7 @@
     </head>
 
     <div id="form-outer">
-        <p id="description">This survey is aimed at people who are using the FreeCodeCamp syllabus and to provide feedback to further enhance the curriculum.</p>
+        <h3 id="description">This survey is aimed at people who are using the FreeCodeCamp syllabus and to provide feedback to further enhance the curriculum.</h3>
             <form id="survey-form" method="GET" action="">
                 <fieldset>
                     <legend>Personal Information</legend>
@@ -76,9 +76,9 @@
                     </div>
                         <div class="rightTab">
                             <ul id="topics" style="list-style: none;">
-                                <li class="checkbox"><label><input name="topic" value="mentoring" type="checkbox" class="newTopic">Mentoring program</li>
-                                <li class="checkbox"><label><input name="topic" value="website" type="checkbox" class="newTopic">Website layout</li>
-                                <li class="checkbox"><label><input name="topic" value="website" type="checkbox" class="newTopic">Website layout</li>
+                                <li class="checkbox"><label><input name="topic" value="mentoring" type="checkbox" class="newTopic">Mentoring program</label></li>
+                                <li class="checkbox"><label><input name="topic" value="website" type="checkbox" class="newTopic">Website layout</label></li>
+                                <li class="checkbox"><label><input name="topic" value="website" type="checkbox" class="newTopic">More projects</label></li>
                             </ul>
                         </div>
                 </div>
@@ -89,9 +89,9 @@
                             <label for="comments">Please provide your feedback about FreeCodeCamp</label>
                         </div>
                         <div class="rightTab">
-                            <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your feedback here."></textarea>
+                            <textarea name="comment" class="input-field" id="comments" style="height:50px;resize-vertical;" placeholder="Enter your feedback here."></textarea>
                         </div>
-
+                </div>
                 <button id="submit" type="submit">Submit</button>
                  
                 </fieldset>

@@ -1,71 +1,184 @@
-<!DOCTYPE html>
-<html>
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
 
- <head>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
-    <meta charset="utf-8">
-    <title> FreeCodeCamp Portfolio Project</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-</head>    
-<body>
-<!-- Navbar -->
-<nav>
-        <ul id="navbar">
-          <li><a href="#welcome-section">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </nav>
-      
-      <div id="welcome-section" class="intro">
-      
-        <h1>Hey I'm Natharas.</h1>
-          
-          <article>
+* {
+  margin: 0;
+  padding: 0;
 
-            <p>Currently I'm working through the FreeCodeCamp curriculum to build my skills in Front End Development. </p> 
-            <p>FreeCodeCamp projects that I've completed have all been done by using HTML and CSS. 
-            These skills I have developed over my time using the FreeCodeCamp curriculum.</p>
+}
 
-          </article>
-        
-        
-      
-      </div>
+.intro {
+  padding-top: 0;
+  margin-top: 0px;
+  display: block;
+  height: 100vh;
+  background: #b5dfc5;
+  /*   line-height: 100vh; */
+  /*   width:100%;
+  height:96vh;
+border:solid; */
+}
 
-      <div id="projects" class="Projects">
-        <h2 class="work-header">These are my projects as part of the Responsive Web Design Projects</h2>
-        <a href="https://codepen.io/FreeCodeCamp/pen/NNvBQW" target="_blank" class="project project-tile">
-          <img class="project-pic" src="https://screenshot.codepen.io/2812121.jjejYP.small.4187558a-d576-4cf2-b795-e5e48f85afe0.png" alt="project">
-          <div class="project-title">FCC Tribute Page</div>
-        </a>
-        
-        <a href="https://codepen.io/natharas/pen/pGyWNR?editors=1100" target="_blank" class="project project-tile">
-          <img class="project-pic" src="https://screenshot.codepen.io/2812121.VOMZBL.small.07ecd9a5-dc10-4a05-acde-2ca2494d7fc5.png" alt="project">
-          <div class="project-title">FCC Survey Form</div>
-        </a>
+.intro h1 {
+  color: #115478;
+  padding-bottom: 0.5cm;
+}
 
-        <a href="https://codepen.io/natharas/pen/QYqobq" target="_blank" class="project project-tile">
-          <img class="project-pic" src="https://screenshot.codepen.io/2812121.QYqobq.small.5150cc72-9031-4611-a9f5-2b30fd46ba60.png" alt="project">
-          <div class="project-title">FCC Product Landing Page</div>
-        </a>
+.intro p {
+  color:#115478;
+  margin-bottom: 3em;
+}
 
-        <a href="https://codepen.io/natharas/pen/KEOjrM" target="_blank" class="project project-tile">
-          <img class="project-pic" src="https://screenshot.codepen.io/2812121.KEOjrM.small.f62be541-8e46-430e-bc6a-b1ae94ebc240.png" alt="project">
-          <div class="project-title">FCC Technical Documentation Page</div>
-        </a>
+.Projects h2 {
+  color: #115478;
+}
 
-      </div>
- 
-      
-<!-- Footer -->
-<footer id="Contact" class="Contact">
-    <h2 class="foot-descrip">Contact me for further information about my projects</h2> 
-    <a id="profile-link" href="https://github.com/natharas" target="_blank" class="contact-details">GitHub</a>
-    <a href="https://codepen.io/natharas/" target="_blank" class="contact-details">CodePen</a>
-    <a href="https://twitter.com/natharas82" target="_blank" class="contact-details">Twitter</a>
-    <a id="profile-link" href="https://www.freecodecamp.org/natharas" target="_blank" class="contact-details">FCC</a>
-</footer>
-</body>
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: #b5dfc5;
+}
 
-</html>
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+nav ul li a {
+  color: #115478;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: green;
+}
+
+.work {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.work .work-header {
+  margin-top: 50px;
+  color: #115478;
+  font-weight: normal;
+}
+
+.project {
+  text-decoration: none;
+  color: #008080;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid lightblue;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+  /*   background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid lightblue;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.show-all {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 20px auto 90px;
+   background: #b5dfc5;
+  color: #115478;
+  font-weight: bold;
+  font-size: 1em;
+  border: 2px solid #90C695;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top:10px;
+}
+
+
+.show-all:hover {
+  background: #b5dfc5;
+  color: green;
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+}
+
+.contact {
+  /*   height:800px; */
+  /*   min-height:800px; */
+  background: #b5dfc5;
+  padding-bottom: 160px;
+}
+
+.header {
+  padding: 160px 0 110px;
+}
+
+.contact-details {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  list-style-type: none;
+  border: 2px solid #90C695;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: #b5dfc5;
+  color: #115478;
+  text-decoration: none;
+}
+
+.contact-details:hover {
+  background: #b5dfc5;
+  color: green;
+}
+
+footer {
+  padding: 20px;
+  background: #b5dfc5;
+  color: #115478;
+  line-height: 40px;
+}
+
+footer a {
+  color: #115478;
+  margin-bottom: 3em;
+}
+
+@media only screen and (max-width: 367px) {
+  /*    #contact{
+    min-height:1100px;
+  } */
+  .contact-details {
+    border: 2px solid #90C695;
+    border-radius: 0;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    line-height: normal;
+  }
+}
